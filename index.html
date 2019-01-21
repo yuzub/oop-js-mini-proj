@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Добавить продукт</h1>
+    <form id="product-form">
+      <div>
+        <label for="name">Наименование</label>
+        <input type="text" id="name" class="u-full-width">
+      </div>
+      <div>
+        <label for="category">Категория</label>
+        <input type="text" id="category" class="u-full-width">
+      </div>
+      <div>
+        <label for="idnum">ID продукта</label>
+        <input type="text" id="idnum" class="u-full-width">
+      </div>
+      <input type="submit" value="Добавить" class="u-full-width">
+
+    </form>
+
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <td>Наименование</td>
+          <td>Категория</td>
+          <td>ID продукта</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody id="product-list"></tbody>
+    </table>
+  </div>
+  
+  <script src="src/app.js"></script>
+</body>
+
+</html>
